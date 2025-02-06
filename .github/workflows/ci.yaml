@@ -8,7 +8,9 @@ jobs:
   run-tests:
   strategy:
     fail-fast:false
-    matrix: os:[windows-latest]
+    matrix: 
+      os:
+        [windows-latest]
     python-version: "3.13"
 
   name: Test
