@@ -9,5 +9,5 @@ def fizzbuzz(n):
             return str(n)
 
 if __name__ == '__main__':
-     for i in range (1,100):
+     for i in range (1,105):
           print (fizzbuzz(i)) 
