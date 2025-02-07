@@ -13,8 +13,10 @@ jobs:
 
     steps:
       - name: Checkout code
-        uses: actions/checkout@v4  
+        uses: actions/checkout@v4
 
       - name: Run tests in Docker
-        run: |
-          docker run devops1
+        run: docker build -t devops1  
+
+      - name: Run tests in Docker
+        run: docker run --rm devops1
